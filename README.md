@@ -1,56 +1,64 @@
-# Welcome to your Expo app 👋
+# Praktikum 10 - CRUD React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Identitas
 
-## Get started
+- Mata Kuliah: Konsep dan Pengembangan Aplikasi Web dan Mobile
+- Praktikum: Pertemuan 10
+- Proyek: Aplikasi Catatan Kuliah
+- Teknologi: React Native, Expo Go, SQLite
 
-1. Install dependencies
+## Deskripsi
 
-   ```bash
+Aplikasi mobile sederhana untuk mengelola catatan
+kuliah dengan operasi CRUD menggunakan SQLite.
+
+## Fitur
+
+1. Create: Menambahkan catatan.
+2. Read: Menampilkan daftar catatan.
+3. Update: Mengubah catatan.
+4. Delete: Menghapus catatan.
+5. Validasi: Judul minimal 3 karakter.
+6. Penyimpanan lokal menggunakan SQLite.
+
+## Teknologi
+
+- React Native
+- Expo
+- TypeScript
+- Expo SQLite
+- Expo Router
+
+## Struktur Folder
+
+src/
+├── app/
+│ ├── \_layout.tsx
+│ └── index.tsx
+├── db/
+│ └── database.ts
+└── services/
+└── noteService.ts
+
+## Cara Menjalankan
+
+1. Clone repository.
+2. Install dependencies:
+
    npm install
-   ```
 
-2. Start the app
+3. Jalankan aplikasi:
 
-   ```bash
    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+4. Scan QR Code menggunakan Expo Go.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Bukti Pengujian
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Tambahkan screenshot:
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Tampilan utama.
+- Proses tambah catatan.
+- Proses edit catatan.
+- Proses hapus catatan.
+- Data setelah aplikasi dibuka kembali.
